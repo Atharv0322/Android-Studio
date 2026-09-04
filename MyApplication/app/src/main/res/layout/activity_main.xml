@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF3FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculator"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:textColor="#1E3A8A"/>
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical|end"
+            android:padding="20dp"
+            android:text="0"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#111827"
+            android:background="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/editTextNumber1"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:hint="First Number"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:background="@android:drawable/edit_text"/>
+
+        <EditText
+            android:id="@+id/editTextNumber2"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:hint="Second Number"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:background="@android:drawable/edit_text"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:layout_marginTop="24dp"
+            android:useDefaultMargins="true">
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:text="+"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_columnWeight="1"
+                android:backgroundTint="#4F46E5"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btnSub"
+                android:text="-"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_columnWeight="1"
+                android:backgroundTint="#8B5CF6"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btnMul"
+                android:text="×"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_columnWeight="1"
+                android:backgroundTint="#10B981"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btnDiv"
+                android:text="÷"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_columnWeight="1"
+                android:backgroundTint="#F59E0B"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btnPercent"
+                android:text="%"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_columnWeight="1"/>
+
+            <Button
+                android:id="@+id/btnSquare"
+                android:text="x²"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_columnWeight="1"/>
+
+            <Button
+                android:id="@+id/btnSqrt"
+                android:text="√"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_columnWeight="1"/>
+
+            <Button
+                android:id="@+id/btnClear"
+                android:text="AC"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_columnWeight="1"
+                android:backgroundTint="#EF4444"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btnMax"
+                android:text="Max"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_columnWeight="1"/>
+
+            <Button
+                android:id="@+id/btnMin"
+                android:text="Min"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_columnWeight="1"/>
+
+            <Button
+                android:id="@+id/btnAvg"
+                android:text="Avg"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_columnWeight="1"/>
+
+            <Button
+                android:id="@+id/btnExit"
+                android:text="Exit"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_columnWeight="1"/>
+        </GridLayout>
+    </LinearLayout>
+
+</ScrollView>
